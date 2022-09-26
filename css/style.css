@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 18, 18);
+  font-family: "Cookie", cursive;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+div.search {
+  background: #222;
+  height: 45px;
+  min-width: 90px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 35px;
+  font-family: "Cookie", cursive;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+div.search #circle {
+  height: 5px;
+  width: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+div.search:hover #circle {
+  height: 50px;
+  width: 100px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid whitesmoke;
+}
+
+input.input {
+  background: #222;
+  height: 45px;
+  width: 190px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 45px;
+  font-family: "Cookie", cursive;
+  padding-left: 15px;
+}
+
+section {
+  padding: 0.5rem;
+}
+section h1 {
+  margin: 1rem auto 0 auto;
+  max-width: 800px;
+  color: white;
+  font-size: 35px;
+}
+
+.container__flex {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  max-height: 300px;
+  min-width: 310px;
+  max-width: 810px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.container__flex::-webkit-scrollbar {
+  width: 6px;
+  background-color: #9198e5;
+}
+.container__flex::-webkit-scrollbar-thumb {
+  background-color: #e66465;
+}
+.container__flex::-webkit-scrollbar-track {
+  background-color: #9198e5;
+}
+
+.container__grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 0px 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 2rem;
+}
+.container__grid .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 3px rgb(150, 147, 147);
+          box-shadow: 0px 0px 3px rgb(150, 147, 147);
+}
+.container__grid .card .item {
+  height: 80%;
+  width: 100%;
+  max-height: 200px;
+  max-width: 300px;
+}
+.container__grid .card .item .gif {
+  height: 100%;
+  width: 100%;
+}
+.container__grid .card .title {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  padding: 5px;
+  color: "#fff";
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  height: 20%;
+  width: 100%;
+  overflow: hidden;
+}
